@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    gap: 8px;
+    /* Caption */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+
+    /* Gray 300 */
+
+    color: #72757C;
+}
+
+.flowersCount {
+    content: url("../../assets/flowersCountIcon.svg");
+}
+
+.bouquetHeight {
+    content: url("../../assets/bouquetHeightIcon.svg");
+}
+
+.bouquetWidth {
+    content: url("../../assets/bouquetWidthIcon.svg");
+}

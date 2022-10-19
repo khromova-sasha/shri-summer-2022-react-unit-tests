@@ -1,4 +1,4 @@
-import {ProductCard} from "./components/ProductCard";
+import {ProductCard} from "./components/product-card/ProductCard";
 import {getBouquetList} from "./__mocks__/bouquetList";
 
 import styles from './App.module.css';

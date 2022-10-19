@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 24px;
+
+    width: 275px;
+    height: 580px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 400px;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 11px;
+}
+
+.label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    /* identical to box height, or 127% */
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    padding: 3px 5px;
+    height: 14px;
+
+    border-radius: 4px;
+    position: absolute;
+    top: 32px;
+}
+
+.hit {
+    background: #F53D3D;
+    left: 32px;
+}
+
+.sale {
+    background: #11C66C;
+}
+
+.heart {
+    position: absolute;
+    top: 32px;
+    right: 34px;
+}
+
+.filledHeart {
+    content: url("../../assets/fillHeartIcon.svg");
+}
+
+.emptyHeart {
+    content: url("../../assets/emptyFavoriteIcon.svg");
+}
