@@ -1,8 +1,8 @@
 import buttonStyles from "./Button.module.css";
 import classNames from "classnames";
 
-export const Button = ({variant, children}) => {
+export const Button = ({variant, disabled, testId, children}) => {
     return (
-        <button className={classNames(buttonStyles.button, buttonStyles[variant])}>{children}</button>
+        <button data-testid={testId} className={classNames(buttonStyles.button, buttonStyles[variant])} disabled={disabled}>{children}</button>
     );
 }

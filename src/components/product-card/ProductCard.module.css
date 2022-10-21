@@ -72,3 +72,9 @@
 .emptyHeart {
     content: url("../../assets/emptyFavoriteIcon.svg");
 }
+
+.noPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

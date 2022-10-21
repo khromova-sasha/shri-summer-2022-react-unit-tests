@@ -1,9 +1,9 @@
 import labelWithIconStyles from "./LabelWithIcon.module.css";
 
-export const LabelWithIcon = ({label, iconName}) => {
+export const LabelWithIcon = ({label, iconName, testId}) => {
     return (
-        <div className={labelWithIconStyles.container}>
-            <div className={labelWithIconStyles[iconName]}></div>
+        <div data-testid={testId} className={labelWithIconStyles.container}>
+            <div className={labelWithIconStyles[iconName]}/>
             <div>{label}</div>
         </div>
     );

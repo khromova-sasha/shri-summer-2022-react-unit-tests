@@ -14,14 +14,18 @@ export const ProductInfo = ({
         <div className={productInfoStyles.container}>
             <div className={productInfoStyles.title}>{title}</div>
             <div className={productInfoStyles.priceContainer}>
-                <span className={classNames(productInfoStyles.price, {[productInfoStyles.new]: Boolean(oldPrice)})}>{currentPrice}₽</span>
+                <span data-testid="product-info-current-price"
+                      className={classNames(productInfoStyles.price, {[productInfoStyles.new]: Boolean(oldPrice)})}>
+                    {currentPrice}₽
+                </span>
                 {Boolean(oldPrice) &&
-                <span className={classNames(productInfoStyles.price, productInfoStyles.old)}>{oldPrice}₽</span>}
+                <span data-testid="product-info-old-price"
+                      className={classNames(productInfoStyles.price, productInfoStyles.old)}>{oldPrice}₽</span>}
             </div>
             <div className={productInfoStyles.infoContainer}>
-                <LabelWithIcon label={`${flowersCount} шт.`} iconName={"flowersCount"}/>
-                <LabelWithIcon label={`${bouquetHeight} см`} iconName={"bouquetHeight"}/>
-                <LabelWithIcon label={`${bouquetWidth} см`} iconName={"bouquetWidth"}/>
+                {Boolean(flowersCount) && <LabelWithIcon testId={"flowers-count"} label={`${flowersCount} шт.`} iconName={"flowersCount"}/>}
+                {Boolean(bouquetHeight) && <LabelWithIcon testId={"bouquet-height"} label={`${bouquetHeight} см`} iconName={"bouquetHeight"}/>}
+                {Boolean(bouquetWidth) && <LabelWithIcon testId={"bouquet-width"} label={`${bouquetWidth} см`} iconName={"bouquetWidth"}/>}
             </div>
         </div>
     );

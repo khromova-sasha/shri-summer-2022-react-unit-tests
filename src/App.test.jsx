@@ -11,6 +11,7 @@ describe('Компонент App', () => {
     it('Отображает карточки товара', () => {
         render(<App />)
 
+
         expect(screen.queryAllByTestId('product-card').length).toBeGreaterThan(0);
     });
 });
